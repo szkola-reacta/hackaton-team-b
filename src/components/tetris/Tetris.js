@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { CountersWrapper, Counter, Footer } from './'
+import Board from '../board';
 import './style.css'
 
 const useScore = () => {
@@ -23,7 +24,7 @@ const Tetris = () => {
         <div className="tetris__wrapper">
             <div className="tetris">
                 <h1>Tetris</h1>
-                {/* <Board updateScore /> */}
+                <Board />
                 <CountersWrapper>
                     <Counter result={score}>Score</ Counter>
                     <Counter result="1">Level</ Counter>

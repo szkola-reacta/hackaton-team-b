@@ -1,0 +1,7 @@
+.tetris-board {
+  width: 400px;
+  height: 500px;
+  margin: 0 auto; 
+  background-color: #222; 
+  border: 10px solid gray;
+}
