@@ -6,18 +6,18 @@ import './style.css'
 const useScore = () => {
 
     const [score, setScore] = useState(0);
-    
-
     const updateScore = (noOfLayersDone) => {
         setScore(score + 10 * noOfLayersDone );
     }
 
-    return [ score, updateScore ]
+    const resetScore = () => setScore(0);
+
+    return [ score, updateScore, resetScore ]
 }
 
 const Tetris = () => {
 
-    const [ score, updateScore ] = useScore();
+    const [ score, updateScore, resetScore ] = useScore();
 
     return (
         <div className="tetris__wrapper">
