@@ -1,11 +1,19 @@
 import React from 'react';
 import { Rect, Group } from 'react-konva';
 
-function TetriminoI( { position, color, borderColor, blockSize } ) {
+function TetriminoS( { position, color, borderColor, blockSize } ) {
 	return (
 		<Group>
 			<Rect
 			x={ position.x }
+			y={ position.y }
+			width={ blockSize }
+			height={ blockSize }
+			fill={ color }
+			stroke={ borderColor }
+		/>
+		<Rect
+			x={ position.x + blockSize }
 			y={ position.y }
 			width={ blockSize }
 			height={ blockSize }
@@ -21,16 +29,8 @@ function TetriminoI( { position, color, borderColor, blockSize } ) {
 			stroke={ borderColor }
 		/>
 		<Rect
-			x={ position.x }
-			y={ position.y + 2 * blockSize }
-			width={ blockSize }
-			height={ blockSize }
-			fill={ color }
-			stroke={ borderColor }
-		/>
-		<Rect
-			x={ position.x }
-			y={ position.y + 3 * blockSize }
+			x={ position.x - blockSize }
+			y={ position.y + blockSize }
 			width={ blockSize }
 			height={ blockSize }
 			fill={ color }
@@ -40,4 +40,4 @@ function TetriminoI( { position, color, borderColor, blockSize } ) {
 	);
 }
 
-export default TetriminoI;
+export default TetriminoS;
