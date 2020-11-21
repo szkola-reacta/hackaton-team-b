@@ -1,0 +1,32 @@
+.tetris__wrapper {
+    background: #000;
+    color: #fff;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px 0;
+}
+
+.tetris {
+    margin: 0 auto;
+    text-align: center;
+    width: 600px;
+}
+
+.tetris__counters {
+    border: 2px solid #fff;
+    margin: 30px auto;
+}
+
+.tetris__counterElement {
+    font-size: 18pt;
+    margin: 10px 0;
+}
+
+.tetris__counterElement__name, .tetris__counterElement__value {
+    display: inline-block;
+    width: 50%
+}
+
+.tetris__counterElement__value {
+    font-weight: bold;
+}

@@ -1,11 +1,10 @@
-import Board from './components/board';
+import { Tetris } from './components/tetris';
 
 
 function App() {
   return (
     <div className="App">
-      <h2>Tetris!</h2>
-      <Board />
+      <Tetris />
     </div>
   );
 }
