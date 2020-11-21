@@ -17,37 +17,37 @@ function Board() {
             position={{x: 20, y: 20}} 
             color='red'
             borderColor='black'
-            blockSize='30'
+            blockSize={30}
           />
           <TetriminoL 
             position={{x: 80, y: 80}} 
             color='green'
             borderColor='red'
-            blockSize='30'
+            blockSize={30}
           />
           <TetriminoO 
-            position={{x: 120, y: 120}} 
+            position={{x: 120, y: 180}} 
             color='yellow'
             borderColor='black'
-            blockSize='30'
+            blockSize={30}
           />
           <TetriminoS 
-            position={{x: 160, y: 160}} 
+            position={{x: 300, y: 120}} 
             color='blue'
             borderColor='black'
-            blockSize='30'
+            blockSize={30}
           />
           <TetriminoT 
             position={{x: 200, y: 200}} 
             color='orange'
             borderColor='black'
-            blockSize='30'
+            blockSize={30}
           />
           <TetriminoZ 
-            position={{x: 260, y: 260}} 
+            position={{x: 260, y: 360}} 
             color='gray'
             borderColor='black'
-            blockSize='30'
+            blockSize={30}
           />
         </Layer>
       </Stage>
